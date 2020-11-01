@@ -4,23 +4,70 @@
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0, shrink-to-fit=no">
         <title>Interface and Web design</title>
+        <link rel="stylesheet" href="cssstylesheet.css">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+        <style>
+            
+
+        ul.topnav {
+            list-style-type: none;
+            margin: 0;
+            padding: 0;
+            overflow: hidden;
+            background-color: #333;
+            }
+
+        ul.topnav li {float: left;}
+
+        ul.topnav li a {
+            display: block;
+            color: white;
+            text-align: center;
+            padding: 14px 16px;
+            text-decoration: none;
+            }
+
+        ul.topnav li a:hover:not(.active) {background-color: #111;}
+
+        ul.topnav li a.active {background-color: #4c7aaf;}
+
+        ul.topnav li.right {float: right;}
+
+        @media screen and (max-width: 600px) {
+        ul.topnav li.right, 
+        ul.topnav li {float: none;}
+        }
+        img {
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+        width: 95%;
+        }
+
+    </style>
     </head>
     <body> 
-        <header>
+        <header class="page-container">
+            <div>
             <img src="logo.png"
-            alt="logo"/>
+            alt="logo" style />
+        </div>
         </header>
-        <nav>
-            <p> -Home -Information Systems and Organizations -Project Management -Interface and Web Design</p> 
-        </nav>
-    
+        <ul class="topnav">
+           <li><a class="active" href="homepage.html">Home Page<a></li>
+           <li><a href="page-twoupdated.html">Information Systems and Organizations<a></li>
+            <li><a href="page-three.html">Project Management <a></li>
+            <li><a class="right" href="page-four.html">Interface and Web Design <a></li>
+        </ul>
+    </head>
+   
     <main> 
         <h1>Interface and Web Design</h1>
         <br>
         <p> Reflection Lorem ipsum, dolor sit amet consectetur adipisicing elit Lorem ipsum, dolor sit amet consectetur adipisicing elitLorem ipsum, dolor sit amet consectetur adipisicing elit Lorem ipsum, dolor sit amet consectetur adipisicing elit  Lorem ipsum, dolor sit amet consectetur adipisicing elit Lorem ipsum, dolor sit amet consectetur adipisicing elitLorem ipsum, dolor sit amet consectetur adipisicing elit Lorem ipsum, dolor sit amet consectetur adipisicing elit  Lorem ipsum, dolor sit amet consectetur adipisicing elit Lorem ipsum, dolor sit amet consectetur adipisicing elitLorem ipsum, dolor sit amet consectetur adipisicing elit Lorem ipsum, dolor sit amet consectetur adipisicing elit </p>
         <h2> Accomplished Work </h2>
         <p><a href="Mood Music poster done.pdf"><img src="mood.png" alt="Mood Music Player Poster" style="width:150px; height:80px"></a></p>
-        <p>This Website!</p>   
+        <p>This Website!</p>
     </main>
-    </body>
+    </body>   
 </html>
